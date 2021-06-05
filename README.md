@@ -1,6 +1,6 @@
 #  Corso Tree School - Java - Back-end  - 2021
 
-![](https://what.thedailywtf.com/assets/uploads/files/1612827607426-fa841c4b-fa0a-4275-9e8d-e9ca1d109e0b-image.png)
+![](https://what.thedailywtf.com/assets/uploads/files/1612827607426-fa841c4b-fa0a-4275-9e8d-e9ca1d109e0b-image.png)    
 **Ciao!**  
 Se sei finito qui probabilmente sei un docente del corso **Tree School** o un mio collega!    
 Qui caricherò i miei esercizi, cercando di dividerli per moduli e tentando di non fare disastri con questa repo.    
