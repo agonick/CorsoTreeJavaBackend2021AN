@@ -16,11 +16,11 @@ A presto!
 *AN*  
 
 
-Modulo 1 Loading..	░░░░░░░░░░░░░ 0%
+- Modulo 1 Loading..	░░░░░░░░░░░░░ 0% (devo recuperarlo da eclipse :())
 
-Modulo 2 Loading..	░░░░░░░░░░░░░ 0%
+- Modulo 2 Loading..	████████░░ 80%
 
-Modulo 3 Loading.. 	░░░░░░░░░░░░░ 0%
+- Modulo 3 Loading.. 	███░░░░░░░ 30%
 
 
 
