@@ -34,7 +34,6 @@ public class maxminjavaq {
         if (min > array[pos + 1])
             min = array[pos + 1];
         return minRecursive(array, min, pos + 1);
-
     }
 
     public static int maxRecursive(int[] array, int max, int pos) {
