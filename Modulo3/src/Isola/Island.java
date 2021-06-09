@@ -27,7 +27,10 @@ public class Island {
 
             grid[riga][colonna]=0;
 
-            return 1+ controllaAdiacenti(grid,riga+1,colonna)+controllaAdiacenti(grid,riga,colonna+1)+controllaAdiacenti(grid,riga-1,colonna)+controllaAdiacenti(grid,riga,colonna-1);
+            return 1+ controllaAdiacenti(grid,riga+1,colonna)
+                    +controllaAdiacenti(grid,riga,colonna+1)
+                    +controllaAdiacenti(grid,riga-1,colonna)
+                    +controllaAdiacenti(grid,riga,colonna-1);
 
 
     }
