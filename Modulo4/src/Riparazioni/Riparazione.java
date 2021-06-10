@@ -1,5 +1,13 @@
 package Riparazioni;
 
+/**
+ * Classe Riparazione che gestisce le riparazioni
+ * param: indirizzoRip -> indirizzo riparazione
+ *       priorità -> priorità riparazione
+ *       conclusa -> riparazione conclusa = true non conclusa =false
+ *
+ */
+
 public class Riparazione {
 
     private String indirizzoRip;
@@ -7,7 +15,18 @@ public class Riparazione {
     private Tecnico tecnicoAssegnato;
     private boolean conclusa=false ;
 
-    public Tecnico getTecnicoAssegnato() {
+    /**
+     *  Costruttore di una riparazione
+     * @param address
+     * @param priority
+     */
+    public Riparazione(String address,int priority){
+        setIndirizzoRip(address);
+        setPriorità(priority);
+    }
+
+
+    public Tecnico getTecnicoAssegnato() { // getter setter tecnico assegnato
         return tecnicoAssegnato;
     }
 
@@ -16,7 +35,7 @@ public class Riparazione {
     }
 
 
-    public boolean isConclusa() {
+    public boolean isConclusa() { // getter  setter conclusa
         return conclusa;
     }
 
@@ -24,15 +43,16 @@ public class Riparazione {
         this.conclusa = conclusa;
     }
 
-    public String getIndirizzoRip() {
+    public String getIndirizzoRip() { // getter setter indirizzo
         return indirizzoRip;
     }
+
 
     public void setIndirizzoRip(String indirizzoRip) {
         this.indirizzoRip = indirizzoRip;
     }
 
-    public int getPriorità() {
+    public int getPriorità() { // getter setter priorità
         return priorità;
     }
 
@@ -40,10 +60,13 @@ public class Riparazione {
         this.priorità = priorità;
     }
 
-    public Riparazione(String address,int priority){
-        setIndirizzoRip(address);
-        setPriorità(priority);
+    @Override
+    public String toString() { //stampa riparazione
+        return "Riparazione{" +
+                "indirizzoRip='" + indirizzoRip + '\'' +
+                ", priorità=" + priorità +
+                ", tecnicoAssegnato=" + tecnicoAssegnato +
+                ", conclusa=" + conclusa +
+                '}';
     }
-
-
 }

@@ -4,23 +4,36 @@ import java.util.Random;
 
 public class Tecnico {
     Random rand=new Random();
+    private int id;
     private String nome;
-    private boolean occupato=false;
+    private boolean available;
+    private Riparazione riparazioneassegnata;
 
-    public boolean isOccupato() {
-        return occupato;
+    public Riparazione getRiparazioneassegnata() {
+        return riparazioneassegnata;
     }
 
-    public void setOccupato(boolean occupato) {
-        this.occupato = occupato;
+    public void setRiparazioneassegnata(Riparazione riparazioneassegnata) {
+        this.riparazioneassegnata = riparazioneassegnata;
     }
 
 
-    public Tecnico(String nome) {
+
+    public boolean isAvailable() {
+        return available;
+    }
+
+    public void setAvailable(boolean available) {
+        this.available = available;
+    }
+
+
+    public Tecnico(int id, String nome) {
+        this.id = id;
         this.nome = nome;
+        setAvailable(false);
     }
 
-    ;
 
     public String getNome() {
         return nome;
@@ -30,15 +43,29 @@ public class Tecnico {
         this.nome = nome;
     }
 
-    public void ripara(Riparazione r1){
+    @Override
+    public String toString() {
+        return "Tecnico{" +
+                "rand=" + rand +
+                ", id=" + id +
+                ", nome='" + nome + '\'' +
+                ", available=" + available +
+                ", riparazioneassegnata=" + riparazioneassegnata +
+                '}';
+    }
+
+    public void ripara(){
+
         int numconclusione= rand.nextInt(4);
         while(numconclusione!=rand.nextInt(4)){
             System.out.println("in corso...");
         }
+
         System.out.println("riparazione conclusa");
-        r1.setConclusa(true);
-        this.setOccupato(false);
+        this.riparazioneassegnata.setConclusa(true);
+        this.setAvailable(false);
     }
+
 
 
 
